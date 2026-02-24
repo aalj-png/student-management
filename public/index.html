@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Student Management</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Student Management</h1>
+
+      <form id="student-form">
+        <input type="hidden" id="student-id" />
+        <label>Name: <input id="name" required /></label>
+        <label>Age: <input id="age" type="number" min="0" /></label>
+        <label>Major: <input id="major" /></label>
+        <button type="submit">Save</button>
+        <button id="cancel" type="button">Cancel</button>
+      </form>
+
+      <section>
+        <h2>Students</h2>
+        <table id="students-table">
+          <thead>
+            <tr><th>ID</th><th>Name</th><th>Age</th><th>Major</th><th>Actions</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>
